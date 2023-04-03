@@ -1,5 +1,22 @@
-# Ooloi-Labs-Api
+## Ooloi-Labs-Api
 Ooloi labs backend dev assignments   
+The backend deployed on render cloud below is the link.
+
+https://event-oglc.onrender.com
 
 
-Some basic documentation as to how we could use postman to test you code. The best way to do this would be to create a collection on postman with these 4 CRUD API routes. Export them from postman. Store them on google drive. And share the link with us.
+## How to use postman to test the code. 
+Click on below link there i listed 4 CURD apis in postman in create api check in body json is there just click on send button.
+same with other 3 api's .
+
+https://www.postman.com/dark-firefly-996652/workspace/pradip-bedre/collection/25002625-6898b22b-cf46-45c2-bff4-f2394e93b31e?action=share&creator=25002625
+
+
+
+## How to run project 
+Step1: Just clone this repo 
+Step2: If you have nobe.Js installed then good if not then install nodejs 
+Step3: Enter "npm install" command in terminal to install all packages 
+Step4: You should have to connect your MongoDB so in env file enter your Mongo Db Atlas Connection string 
+Step5: Then run npm start 
+
