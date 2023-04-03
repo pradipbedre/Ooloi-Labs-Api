@@ -15,9 +15,9 @@ https://www.postman.com/dark-firefly-996652/workspace/pradip-bedre/collection/25
 
 
 ## How to run project 
-Step1: Just clone this repo 
-Step2: If you have nobe.Js installed then good if not then install nodejs 
-Step3: Enter "npm install" command in terminal to install all packages 
-Step4: You should have to connect your MongoDB so in env file enter your Mongo Db Atlas Connection string 
-Step5: Then run npm start 
+- Step1: Just clone this repo 
+- Step2: If you have nobe.Js installed then good if not then install nodejs 
+- Step3: Enter "npm install" command in terminal to install all packages 
+- Step4: You should have to connect your MongoDB so in env file enter your Mongo Db Atlas Connection string 
+- Step5: Then run npm start 
 
