@@ -6,7 +6,8 @@ https://event-oglc.onrender.com
 
 
 ## How to use postman to test the code. 
-Click on below link there i listed 4 CURD apis in postman in create api check in body json is there just click on send button.
+Click on the link below to see a list of 4 CURD apis. In postman, inside the create api, check the body for the create event json and then click the send button to create the event. 
+
 same with other 3 api's .
 
 https://www.postman.com/dark-firefly-996652/workspace/pradip-bedre/collection/25002625-6898b22b-cf46-45c2-bff4-f2394e93b31e?action=share&creator=25002625
