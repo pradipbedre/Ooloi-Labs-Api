@@ -47,12 +47,23 @@ const eventSchema = new mongoose.Schema({
     pdf: [String],
     video: [String],
     bullet_list: [String],
-    joining_info: String,
-    organised_info: String,
-    tags: [String],
+    number_list: [String],
+  },
+  joining_info: {
+    type: String,
+    required: true,
+  },
+  organised_by: {
+    type: String,
+    required: true,
+  },
+  tags: {
+    type: [String],
+    required: true,
   },
 });
 
 const Event = mongoose.model("Event", eventSchema);
 
 export default Event;
+

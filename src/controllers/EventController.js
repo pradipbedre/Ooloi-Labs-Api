@@ -13,9 +13,12 @@ export const createEvent = async (req, res) => {
       speakers: req.body.speakers,
       moderators: req.body.moderators,
       other_event_info: req.body.other_event_info,
+      joining_info: req.body.joining_info,
+      organised_by: req.body.organised_by,
+      tags: req.body.tags,
     });
     const savedEvent = await newEvent.save();
-    res.json(savedEvent);
+    res.status(200).json(savedEvent);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
@@ -25,7 +28,7 @@ export const createEvent = async (req, res) => {
 export const getEvent = async (req, res) => {
   try {
     const event = await Event.findById(req.params.id);
-    res.json(event);
+    res.status(200).json(event);
   } catch (err) {
     res.status(404).json({ message: "Event not found" });
   }
@@ -37,7 +40,7 @@ export const updateEvent = async (req, res) => {
     const event = await Event.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
-    res.json(event);
+    res.status(200).json(event);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
@@ -47,7 +50,7 @@ export const updateEvent = async (req, res) => {
 export const deleteEvent = async (req, res) => {
   try {
     const event = await Event.findByIdAndDelete(req.params.id);
-    res.json({ message: "Event deleted" });
+    res.status(200).json({ message: "Event deleted" });
   } catch (err) {
     res.status(404).json({ message: "Event not found" });
   }

@@ -5,7 +5,7 @@ import eventRouter from "./src/routes/EventRoutes.js";
 const port = process.env.PORT || 2000;
 const app = express();
 
-/* Middle wares  */
+/* Middle Wares */
 dotenv.config();
 app.use(express.json());
 
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 /* API Routes  */
-/* app.use("/", userRouter); */
+app.use("/", eventRouter);
 
 app.listen(port, () => {
   connect();
